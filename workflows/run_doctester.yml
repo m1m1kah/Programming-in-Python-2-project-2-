@@ -1,0 +1,8 @@
+name: Check My Docstrings
+
+on: workflow_dispatch
+
+jobs:
+  run-tests:
+    uses: sms-MTH5005/actions/.github/workflows/run-doctester.yml@main
+    secrets: inherit

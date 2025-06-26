@@ -1,0 +1,10 @@
+name: Test Lab 9 with Solution Heap
+
+on: workflow_dispatch
+
+jobs:
+  run-tests:
+    uses: sms-MTH5005/actions/.github/workflows/run-pytest-with-remote-tests.yml@main
+    with:
+      tests: tests/test_lab_9.py
+    secrets: inherit

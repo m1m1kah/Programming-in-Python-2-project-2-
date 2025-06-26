@@ -1,0 +1,10 @@
+name: Test Range Query
+
+on: workflow_dispatch
+
+jobs:
+  run-tests:
+    uses: sms-MTH5005/actions/.github/workflows/run-pytest.yml@main
+    with:
+      tests: tests/test_range_query.py
+    secrets: inherit
